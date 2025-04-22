@@ -1,0 +1,152 @@
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-left: auto;
+	margin-right: auto;
+	width: 98%; /* changed from 600px */
+	max-width: 960px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: solid;
+	border-color: #931420;
+	border-width: 3px;
+	background-color: white;
+	padding: 20px;
+}
+
+a:focus, a:hover {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 150%;
+	padding-top: .5 ems;
+	padding-bottom: .25 ems;
+}
+header {
+	border-bottom: solid;
+	border-width: 3px;
+	border-color:#931420; 
+	padding-top: 1.5ems;
+	padding-bottom: 20px;
+	background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+/* the styles for the header */
+header h2 {
+	font-size: 175%;
+	color: #800000;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;                 /* 160 / 800 x 100 */
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+	width: 100%;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+
+.current {
+	color: yellow;
+}
+section img{
+	float: right;
+	margin-top: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	border: 1px solid black;
+	max-width: 150px;
+
+}
+
+/* removed main h1 rule */
+
+main h2 {
+	color: #931420;
+	font-size: 85%;
+}
+main h3 {
+	font-size: 105%;
+}
+
+/* styles for section */
+section {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	width: 60%;
+	max-width: 960px;
+	font-size: 110%;
+}
+
+/* styles for aside */
+aside {
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right:20px; 
+	width: 60%;
+	max-width: 960px;
+
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #931420;
+	clear: both; /* added to clear floating */
+}
+footer p {
+	text-align: center;
+	color: #ffffff;
+}
+
+* {
+    margin: auto;
+    padding: auto;
+}
